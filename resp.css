@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
+}
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+
+.card {
+  width: 100px;
+  /* height: 140px; */
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.link {
+  text-align: center;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: lighter;
+  font-size: xx-small;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 9999px;
+  margin-top: 10px;
+}
+
+.link-1 a {
+  color: hsl(31, 77%, 52%);
+}
+
+.link-2 a {
+  color: hsl(184, 100%, 22%);
+}
+
+.link-3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: xx-small;
+  text-align: left;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: lighter;
+  min-height: fit-content;
+}
+.logo {
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo-1 {
+  background-image: url(../images/icon-sedans.svg);
+}
+.logo-2 {
+  background-image: url(../images/icon-suvs.svg);
+}
+.logo-3 {
+  background-image: url(../images/icon-luxury.svg);
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: medium;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  letter-spacing: 3px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 350px) {
+  body {
+    height: 100vh;
+  }
+
+  .card {
+    width: 180px;
+    min-height: 350px;
+    display: flex;
+  }
+  .flex {
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card1 {
+    border-radius: 10px 0 0 10px;
+  }
+  .card3 {
+    border-radius: 0 10px 10px 0;
+  }
+  h2 {
+    font-size: x-larger;
+  }
+
+  h2 {
+    font-size: larger;
+  }
+
+  p {
+      font-size: small;
+  }
+
+  .link{
+      font-size: medium;
+      padding: 10px 15px;
+  }
+}
+
+@media (min-width:700px){
+    
+    .card{
+        width: 300px;
+        min-height: 450px;
+        padding: 40px;
+        font-size: xx-large;
+        justify-content: space-around;
+    }
+
+    .h2{
+        font-size:20px;
+    }
+
+    .link{
+     padding: 15px 25px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 80px;
+      }
+    .content{
+        height: 150px;
+        
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
